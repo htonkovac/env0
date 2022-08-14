@@ -3,7 +3,7 @@ variable "trigger" {
   description = "The trigger value for the `null_resource` resource in this module."
   default     = "world"
 }
-`
+
 resource "null_resource" "resource" {
   triggers = {
     hello = var.trigger
